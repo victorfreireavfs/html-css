@@ -1,0 +1,13 @@
+PLANEJANDO SITE
+
+LAYOUT
+
+wireframe é uma ferramenta onde se pode montar toda a estrutura do site existem vários elementos de composição para deixar o site do jeito que seu esbouço exige.
+
+CORES
+
+adobe color é a ferramenta utilizada para escolher a paleta de cores. nela voce pode importar referências de cores e montar sua paleta de acordo com aos aspectos de sua preferência.
+
+FONTES
+
+no googlefonts ou no dafonts vc importa a melhor fonte oara estilizar seu projeto
