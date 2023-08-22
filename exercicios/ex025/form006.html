@@ -7,28 +7,27 @@
 </head>
 <body>
     <h1>Teste de formulários</h1>
-    <form action="" method="get" autocomplete="on">
-
-        <p>
-            <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor" value="#00ff00">
-        </p>
-
-        <p>
-            <label for="inivel">Nível de Satisfação</label>
-            <input type="range" name="nivel" id="inivel"
-             min="1" max="5" value="1">
-        </p>
-
-        <p>
-            <label for="ifoto"> Foto de perfil</label>
-            <input type="file" name="foto" id="ifoto ">
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <fieldset>
+        <legend>TESTE DE FORMULÁRIOS</legend>
+        <form action="" method="get" autocomplete="on">
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="inivel"
+                 min="1" max="5" value="1">
+            </p>
+            <p>
+                <label for="ifoto"> Foto de perfil</label>
+                <input type="file" name="foto" id="ifoto ">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
 </body>
 </html>
