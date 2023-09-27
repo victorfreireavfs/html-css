@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* Todas as mIdias*/
 /* Typical Device Breakpoints
   Pequenas Telas: 320px — 480px
@@ -12,98 +10,83 @@
 
 /*iMPRESSÃO*/
 @media print{
-    body{
-        background-image: url(../imagens/back-print.jpg);
-    }
-
-    *{
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-    main{
-        border: 2px solid black;
-        width: 90vw;
-    }
-
-    main::after{
-        content:'Essa versão foi feita através do site www.cursoemvideo.com';
-        text-decoration: overline;
-       
-    }
-
-    main, h1 {
-        text-shadow: none;
-        color: black;
-    }
-
-    img#phone {display: none;}
-    
-    img#tablet {display: none;}
-    
-    img#print {display: block;}
-    
-    img#pc {display: none;}
-    
-    img#tv {display: none;}
+  *{
+  font-family: 'Courier New', Courier, monospace;
 }
 
+  body{
+    background-image: url(../imagens/back-print.jpg);
+  }
+
+  main{
+    width: 90vw;
+    border: 2px solid black;
+  }
+
+  main::after{
+    content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+    text-decoration: overline;
+  }
+
+  main h1{
+    text-shadow: none;
+    color: black;
+  }
+
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: block;}
+img#pc{display: none;}
+img#tv{display: none;}
+}
 
 /*TABLET*/
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  body{
+    background-image: url(../imagens/back-tablet.jpg);
+  }
 
-    main{
-       width: 70vw; 
-    }
+  main{
+    width: 70vw;
+  }
 
-    img#phone {display: none;}
-    
-    img#tablet {display: block;}
-    
-    img#print {display: none;}
-    
-    img#pc {display: none;}
-    
-    img#tv {display: none;}
+img#phone{display: none;}
+img#tablet{display: block;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
 }
 
 /*DESKTOP*/
-@media screen and (min-width:1025px) and (max-width:1200px){
-    body {
-        background-image: url(../imagens/back-pc.jpg);
-    }
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  body{
+    background-image: url(../imagens/back-pc.jpg);
+  }
 
-    main{
-        width: 60vw;
-    }
+  main{
+    width: 70vw;
+  }
 
-    img#phone {display: none;}
-    
-    img#tablet {display:none;}
-    
-    img#print {display: none;}
-    
-    img#pc {display: block;}
-    
-    img#tv {display: none;}
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#pc{display: block;}
+img#tv{display: none;}
 }
 
 /*GRANDES TELAS*/
-@media screen and (min-width:1200px){
-    body {
-        background-image: url(../imagens/back-tv.jpg);
-    }
+@media screen and (min-width: 1201px){
+  body{
+    background-image: url(../imagens/back-tv.jpg);
+  }
 
-    main{
-        width: 50vw;
-    }
+  main{
+    width: 70vw;
+  }
 
-    img#phone {display: none;}
-    
-    img#tablet {display:none;}
-    
-    img#print {display: none;}
-    
-    img#pc {display: none;}
-    
-    img#tv {display: block;}
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: block;}
 }
