@@ -1,0 +1,47 @@
+<!--
+alinhamento de conteúdo empacotado (wrap)
+
+align-content = stretch(padrão = elementos "quebrados" preenchem o eixo transversal)
+flex-start = cola os elementos no cross-start
+flex-end = cola os elementos no cross-end
+center = cria espaçoes em branco e centraliza os itens
+space-between = primeiros elementos colando no cross-start e o retante 
+no cross-and
+space-evenly = espaçamento igual entre os elementos
+space-araound = divide o conteiner no numero de itens e centraliza os itens
+ 
+-->
+
+<!DOCTYPE html>
+ <html lang="py-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        #conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            /* principal parâmetro: display flex */
+        }   
+        
+        #item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            /* principal parâmetro: flex auto */
+        };
+    </style>
+ </head>
+ <body>
+    <div id="conteiner">
+        <div id="item">A</div>
+        <div id="item">B</div>
+        <div id="item">C</div>
+        <div id="item">D</div>
+        <div id="item">E</div>
+        <div id="item">F</div>
+        <div id="item">G</div>
+    </div>
+ </body>
+ </html>
