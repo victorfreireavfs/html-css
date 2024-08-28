@@ -1,0 +1,46 @@
+<!-- flex-wrap(empacotamento)
+o encolhimento dos itens no conteiner depente do conteúdo
+
+flex-wrap: nowrap(encolhe o item);
+flex-wrap: wrap(quebra de item para o eixo transversal);
+flex-wrap: wrap-reverse(quebra de item para o sentido oposto
+do eixo transversal);
+
+flex-flow (shorthand)= 
+-->
+
+<!DOCTYPE html>
+ <html lang="py-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        #conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            /* principal parâmetro: display flex */
+        }   
+        
+        #item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto
+            /* principal parâmetro: flex auto */
+        };
+    </style>
+ </head>
+ <body>
+    <div id="conteiner">
+        <div id="item">Exemplo de bloco A</div>
+        <div id="item">Exemplo de bloco B</div>
+        <div id="item">Exemplo de bloco C</div>
+        <div id="item">Exemplo de bloco D</div>
+        <div id="item">Exemplo de bloco E</div>
+        <div id="item">Exemplo de bloco F</div>
+        <div id="item">Exemplo de bloco G</div>
+    </div>
+ </body>
+ </html>

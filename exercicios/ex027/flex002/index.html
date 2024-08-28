@@ -1,0 +1,53 @@
+<!-- flex direction
+configuração feita no conteiner (pai) 
+
+DIREÇÕES
+
+row= (linha) esq - dir
+row-reverse* = (linha) dir - esq
+column = (coluna) cima - baixo
+column-reverse* = (coluna) baixo - cima
+
+EIXOS (axis) 
+main-axis (row)* = main-start / main-end 
+corss-axis (column)* = cross-start / cross-end
+
+obs: sempre obserar a direção imposta para determinar os eixos
+
+-->
+
+<!DOCTYPE html>
+ <html lang="py-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        #conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column-reverse;
+            /* principal parâmetro: display flex */
+        }   
+        
+        #item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            /* principal parâmetro: flex auto */
+        };
+    </style>
+ </head>
+ <body>
+    <div id="conteiner">
+        <div id="item">A</div>
+        <div id="item">B</div>
+        <div id="item">C</div>
+        <div id="item">D</div>
+        <div id="item">E</div>
+        <div id="item">F</div>
+        <div id="item">G</div>
+    </div>
+ </body>
+ </html>
