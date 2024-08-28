@@ -1,0 +1,60 @@
+<!-- justify-content (eixo principal - main-axis)
+ main-axis tem  main-start e main-end 
+
+ flex-start = main-start
+ flex-end = main-end
+ center = centro do main-axis
+ space-between = primeiro item no main-start e o ultimo no main-end
+ space-evenly = espacamento igual entre itens
+ space-around = divide o conteiner no número de itens e centraliza
+
+
+ 
+ align-items(eixo transversal - cross-axis)
+ cross-axis tem cross-start e cross-end
+
+ stretch = esticar os elementos no conteiner
+ flex-start = itens colados no cross-start
+ flex-end = itens colados no cross-end
+ center = alinhados no centro do cross-axis
+ 
+ *observar as propriedades row e column
+
+-->
+<!DOCTYPE html>
+ <html lang="py-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        #conteiner{
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+            /* principal parâmetro: display flex */
+        }   
+        
+        #item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            /* principal parâmetro: flex auto */
+        };
+    </style>
+ </head>
+ <body>
+    <div id="conteiner">
+        <div id="item">A</div>
+        <div id="item">B</div>
+        <div id="item">C</div>
+        <div id="item">D</div>
+        <div id="item">E</div>
+        <div id="item">F</div>
+        <div id="item">G</div>
+    </div>
+ </body>
+ </html>
